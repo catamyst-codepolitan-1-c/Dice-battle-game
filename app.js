@@ -1,11 +1,3 @@
-let diceImages = [
-  "./img/dice-1.svg",
-  "./img/dice-2.svg",
-  "./img/dice-3.svg",
-  "./img/dice-4.svg",
-  "./img/dice-6.svg",
-];
-
 let dices = document.querySelectorAll(".dice");
 
 const dice1Element = document.getElementById("dice-01");
@@ -28,7 +20,6 @@ function roll() {
     let dice3Value = Math.floor(Math.random() * 6) + 1;
     let dice4Value = Math.floor(Math.random() * 6) + 1;
 
-    // console.log(diceImages);
     dice1Element.setAttribute("src", `./img/dice-${dice1Value}.svg`);
     dice2Element.setAttribute("src", `./img/dice-${dice2Value}.svg`);
     dice3Element.setAttribute("src", `./img/dice-${dice3Value}.svg`);

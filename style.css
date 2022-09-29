@@ -153,6 +153,7 @@ img {
 .shake {
   animation: shake 0.5s infinite;
 }
+
 @keyframes shake {
   0% {
     transform: rotate(8deg);

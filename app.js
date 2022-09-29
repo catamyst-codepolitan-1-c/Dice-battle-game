@@ -9,41 +9,41 @@ let diceImg = [
 let dice = document.querySelectorAll("img");
 
 function roll() {
-  dice.forEach(function (die) {
-    die.classList.add("shake");
+  dice.forEach(function (dice) {
+    dice.classList.add("shake");
   });
   setTimeout(function () {
-    dice.forEach(function (die) {
-      die.classList.remove("shake");
+    dice.forEach(function (dice) {
+      dice.classList.remove("shake");
     });
 
-    let dieOneValue = Math.floor(Math.random() * 5);
-    let dieTwoValue = Math.floor(Math.random() * 5);
-    let dieThreeValue = Math.floor(Math.random() * 5);
-    let dieFourValue = Math.floor(Math.random() * 5);
+    let diceOneValue = Math.floor(Math.random() * 5);
+    let diceTwoValue = Math.floor(Math.random() * 5);
+    let diceThreeValue = Math.floor(Math.random() * 5);
+    let diceFourValue = Math.floor(Math.random() * 5);
     // console.log(diceImg);
     document
       .getElementById("dice-01")
-      .setAttribute("src", diceImg[dieOneValue]);
+      .setAttribute("src", diceImg[diceOneValue]);
     document
       .getElementById("dice-02")
-      .setAttribute("src", diceImg[dieTwoValue]);
+      .setAttribute("src", diceImg[diceTwoValue]);
     document
       .getElementById("dice-03")
-      .setAttribute("src", diceImg[dieThreeValue]);
+      .setAttribute("src", diceImg[diceThreeValue]);
     document
       .getElementById("dice-04")
-      .setAttribute("src", diceImg[dieFourValue]);
+      .setAttribute("src", diceImg[diceFourValue]);
 
     document.getElementById("total").innerHTML =
       "Your roll is " +
-      (dieOneValue +
+      (diceOneValue +
         1 +
-        (dieTwoValue + 1) +
+        (diceTwoValue + 1) +
         1 +
-        (dieThreeValue + 1) +
+        (diceThreeValue + 1) +
         1 +
-        (dieFourValue + 1));
+        (diceFourValue + 1));
   }, 1000);
 }
 

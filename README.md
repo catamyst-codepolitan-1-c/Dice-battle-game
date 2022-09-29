@@ -1,16 +1,20 @@
-# Dice-battle-game
+# Dice Battle Game
 
-Dice Battle website is a website where you can play dice with ur friend,, u can chose left or right side when the dice more high you will be win
+Dice Battle Game is a website where you can play dice with your friend. You can choose left or right side when the dice is higher, you win.
 
-- Figma Url : https://www.figma.com/file/rdkk4c7bHXCr2md8djetGW/Dice-Battle
-- Live Preview :
+- Figma URL: https://www.figma.com/file/rdkk4c7bHXCr2md8djetGW/Dice-Battle
+- Live Preview: https://dice-battle-game-bvkc.vercel.app
 
 ## Features
 
 - Random dice value
-- Print score
+- Show score
 
 ## Authors
 
-- Muhammad Zulkarnaen Indranto @https://www.linkedin.com/in/muhammad-zulkarnaen-indranto-583151174/
-- Ade Faisal 
+- Muhammad Zulkarnaen Indranto
+  - GitHub: ?
+  - LinkedIn: https://www.linkedin.com/in/muhammad-zulkarnaen-indranto-583151174/
+- Ade Faisal
+  - GitHub: ?
+  - LinkedIn: ?

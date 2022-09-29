@@ -20,10 +20,20 @@
     </section>
     <section class="content">
       <div class="container-content-dice">
-        <div class="dice-container">aaaaa</div>
-        <div class="dice-container">aaaaa</div>
+        <div class="dice-container">
+          <img id="dice-01" />
+          <img id="dice-02" />
+        </div>
+        <div class="dice-container">
+          <img id="dice-03" />
+          <img id="dice-04" />
+        </div>
       </div>
-      <button id="start" class="start">START</button>
+      <div class="button-container">
+        <button onclick="roll()" id="start" class="start">START</button>
+        <p id="total"></p>
+      </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>

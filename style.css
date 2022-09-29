@@ -136,6 +136,31 @@ img {
   grid-template-columns: 5fr 5fr;
 }
 
-.start {
-  text-align: center;
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--mb-0-75);
+}
+
+#dice-01,
+#dice-02,
+#dice-03,
+#dice-04 {
+  height: 100px;
+  width: 100px;
+}
+
+.shake {
+  animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
 }

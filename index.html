@@ -4,33 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Battle Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Battle Dice</title>
   </head>
-
   <body>
     <section class="score">
       <div class="head">
-        <h1>BATTLE DICE GAME</h1>
+        <h1>BATTLE DICE</h1>
       </div>
       <div class="score-dice">
-        <p id="score1">20</p>
+        <p id="score1"></p>
         <p>VS</p>
-        <p id="score2">20</p>
+        <p id="score2"></p>
       </div>
     </section>
-
     <section class="content">
       <div class="container-content-dice">
-        <!--  -->
         <div class="dice-container">
-          <img class="dice" id="dice-01" />
-          <!-- <img id="player-1-dice-1" alt="Player 1 Dice 1" /> -->
-          <img class="dice" id="dice-02" />
+          <img id="dice-01" />
+          <img id="dice-02" />
+          <span id="totalPlayerOne"></span>
         </div>
         <div class="dice-container">
-          <img class="dice" id="dice-03" />
-          <img class="dice" id="dice-04" />
+          <img id="dice-03" />
+          <img id="dice-04" />
+          <span id="totalPlayerTwo"></span>
         </div>
       </div>
       <div class="button-container">
@@ -38,7 +36,6 @@
         <button onclick="roll()" id="start" class="start">START</button>
       </div>
     </section>
-
-    <script src="/app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

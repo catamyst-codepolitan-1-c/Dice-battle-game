@@ -156,6 +156,18 @@ img {
   width: 100px;
 }
 
+.score-player {
+  display: flex;
+  justify-content: space-around;
+  margin-top: var(--mb-1-5);
+}
+
+.player-name {
+  display: flex;
+  justify-content: space-around;
+  margin-top: var(--mb-1-5);
+}
+
 .shake {
   animation: shake 0.5s infinite;
 }

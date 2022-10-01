@@ -1,3 +1,5 @@
+// import { getWinner } from "./assets/modules/getWinner.js";
+
 let dices = document.querySelectorAll(".dice");
 let scoreElementPlaye1 = document.querySelector("#scoredice1");
 let scoreElementPlaye2 = document.querySelector("#scoredice2");
@@ -37,6 +39,16 @@ function roll() {
     // document.getElementById("total").innerHTML =
     //   "Your roll is " + totalDiceValue;
   }, 1000);
+}
+
+function inputName() {
+  let inputUser1 = document.getElementById("userinput1");
+  let inputUser2 = document.getElementById("userinput2");
+  let player1 = document.getElementById("playername1");
+  let player2 = document.getElementById("playername2");
+
+  player1.textContent = inputUser1.value;
+  player2.textContent = inputUser2.value;
 }
 
 roll();

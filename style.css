@@ -132,14 +132,20 @@ img {
 }
 
 .container-content-dice {
-  display: grid;
-  grid-template-columns: 5fr 5fr;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dice-container {
+  display: flex;
+  gap: 30px;
+  padding-top: var(--mb-1-5);
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: var(--mb-0-75);
+  margin-top: var(--mb-1-5);
 }
 
 #dice-01,

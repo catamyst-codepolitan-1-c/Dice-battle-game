@@ -1,13 +1,10 @@
 let dices = document.querySelectorAll(".dice");
-let scoreElementPlaye1 = document.querySelector("#score1");
-let scoreElementPlaye2 = document.querySelector("#score2");
+let scoreElementPlaye1 = document.querySelector("#scoredice1");
+let scoreElementPlaye2 = document.querySelector("#scoredice2");
 const dice1Element = document.getElementById("dice-01");
 const dice2Element = document.getElementById("dice-02");
 const dice3Element = document.getElementById("dice-03");
 const dice4Element = document.getElementById("dice-04");
-
-let ScorePlayerOne = 0;
-let ScorePlayerTwo = 0;
 
 function roll() {
   dices.forEach(function (dice) {

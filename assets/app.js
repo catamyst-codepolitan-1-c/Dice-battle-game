@@ -7,12 +7,16 @@ const dice1Element = document.getElementById("dice-01");
 const dice2Element = document.getElementById("dice-02");
 const dice3Element = document.getElementById("dice-03");
 const dice4Element = document.getElementById("dice-04");
+let inputUser1 = document.getElementById("userinput1");
+let inputUser2 = document.getElementById("userinput2");
+let player1 = document.getElementById("playername1");
+let player2 = document.getElementById("playername2");
 //-----------------------------------------------------
 //Variabel use to show pop up and close pop Up
 const closePopUP = document.getElementById("closePopUp");
 const closeButton = document.querySelector(".close-button");
 const modal = document.querySelector(".modal");
-const trigger = document.querySelector(".trigger");
+// const trigger = document.querySelector(".trigger");
 
 //windows.onload use to pop up show at page reload
 window.onload = function () {
@@ -21,7 +25,7 @@ window.onload = function () {
 
 //Function toggleModal use to switch class name example from show modal to hidden modal
 function toggleModal() {
-  modal.classList.toggle("show-modal");
+  modal.classList.remove("show-modal");
 }
 
 function roll() {
@@ -45,27 +49,33 @@ function roll() {
     dice3Element.setAttribute("src", `./assets/img/dice-${dice3Value}.svg`);
     dice4Element.setAttribute("src", `./assets/img/dice-${dice4Value}.svg`);
 
-    // const totalDiceValue = dice1Value + dice2Value + dice3Value + dice4Value;
     playerOne = dice1Value + dice2Value;
     playerTwo = dice3Value + dice4Value;
 
     scoreElementPlaye1.textContent = playerOne;
     scoreElementPlaye2.textContent = playerTwo;
-
-    // document.getElementById("total").innerHTML =
-    //   "Your roll is " + totalDiceValue;
   }, 1000);
 }
 
 function inputName() {
-  let inputUser1 = document.getElementById("userinput1");
-  let inputUser2 = document.getElementById("userinput2");
-  let player1 = document.getElementById("playername1");
-  let player2 = document.getElementById("playername2");
-
   player1.textContent = inputUser1.value;
   player2.textContent = inputUser2.value;
-  closePopUP.addEventListener("click", toggleModal);
 }
+
+// closePopUP.addEventListener("click", toggleModal);
+
+closePopUP.addEventListener("click", (Event) => {
+  try {
+    player1Con = inputUser1.value;
+    player2Con = inputUser1.value;
+
+    if (!player1Con || !player2Con) {
+      throw new Error("Value must exist");
+    }
+    toggleModal();
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 roll();

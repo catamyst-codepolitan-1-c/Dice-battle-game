@@ -16,5 +16,5 @@ Dice Battle Game is a website where you can play dice with your friend. You can 
   - GitHub: ?
   - LinkedIn: https://www.linkedin.com/in/muhammad-zulkarnaen-indranto-583151174/
 - Ade Faisal
-  - GitHub: ?
+  - GitHub: https://github.com/adeahmadfaisal
   - LinkedIn: ?

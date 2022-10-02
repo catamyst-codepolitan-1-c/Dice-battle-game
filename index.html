@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title>Battle Dice</title>
-  </head>
-  <body>
-    <section class="score">
-      <div class="head">
-        <h1>BATTLE DICE</h1>
-      </div>
-      <div class="score-dice">
-        <p id="scoredice1"></p>
-        <p>VS</p>
-        <p id="scoredice2"></p>
-      </div>
-    </section>
-    <section class="content">
-      <div class="container-content-dice">
-        <div id="player1" class="dice-container">
-          <img id="dice-01" />
-          <img id="dice-02" />
-          <span id="totalPlayerOne"></span>
-        </div>
-        <div id="player2" class="dice-container">
-          <img id="dice-03" />
-          <img id="dice-04" />
-          <span id="totalPlayerTwo"></span>
-        </div>
-      </div>
-      <div class="score-player">
-        <h1 id="scoreplayer1">0</h1>
-        <h1 id="scoreplayer2">0</h1>
-      </div>
-      <div class="player-name">
-        <h1 id="playername1">rizky</h1>
-        <h1 id="playername2">angga</h1>
-      </div>
-      <div class="button-container">
-        <!-- <p id="total"></p> -->
-        <button onclick="roll()" id="start" class="start">START</button>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>Battle Dice</title>
+</head>
+<body>
+  <section class="score">
+    <div class="head">
+      <h1>BATTLE DICE</h1>
+    </div>
+<!--   <div class="score-dice">
+<p id="scoredice1"></p>
+<p>VS</p>
+<p id="scoredice2"></p>
+</div> -->
+</section>
+<section class="content">
+  <div class="container-content-dice">
+    <div id="player1" class="dice-container">
+      <img id="dice-01" class="shakePasif" />
+      <img id="dice-02" class="shakePasif"/>
+        <span id="totalPlayerOne"></span>
+    </div>
+    <div id="player2" class="dice-container">
+      <img id="dice-03" class="shakePasif"/>
+      <img id="dice-04" class="shakePasif"/>
+      <span id="totalPlayerTwo"></span>
+    </div>
+  </div>
+  <div class="score-player">
+    <h1 id="scoredice1"></h1>
+    <h1 id="scoredice2"></h1>
+  </div>
+  <div class="player-name">
+    <h1 h1 id="playername1">Player One</h1>
+    <h1 id="playername2">Player Two</h1>
+  </div>
+  <div class="button-container">
+<!-- <p id="total"></p> -->
+    <button onclick="roll()" id="start" class="start">START</button>
+  </div>
+</section>
 
-    <section class="name-input">
-      <h3>Player one</h3>
-      <input id="userinput1" />
-      <h3>Player two</h3>
-      <input id="userinput2" /><br />
-      <button onclick="inputName()">Submit</button>
-    </section>
-    <script src="./assets/app.js"></script>
-  </body>
+
+
+<!-- Pop Up -->
+
+
+<div class="modal" id="popup">
+    <div class="modal-content">
+        <section class="name-input">
+          <h1><center> Enter Your Name </center></h1>
+          <h3>Player one</h3>
+          <input id="userinput1" />
+          <h3>Player two</h3>
+          <input id="userinput2" /><br />
+          <button onclick="inputName()" id="closePopUp" class="start">Submit</button>
+        </section>
+    </div>
+</div>
+<button class="trigger"></button>
+
+<!-- Pop Up -->
+
+<script src="./assets/app.js"></script>
+</body>
 </html>

@@ -1,4 +1,5 @@
 // import { getWinner } from "./assets/modules/getWinner.js";
+// import { inputPlayer } from "./assets/modules/inputPlayer.js";
 //let h11 = document.getElementById("scoredice");
 let dices = document.querySelectorAll(".shakePasif");
 let scoreElementPlaye1 = document.getElementById("scoredice1");

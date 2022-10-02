@@ -1,12 +1,28 @@
 // import { getWinner } from "./assets/modules/getWinner.js";
-
-let dices = document.querySelectorAll(".dice");
-let scoreElementPlaye1 = document.querySelector("#scoredice1");
-let scoreElementPlaye2 = document.querySelector("#scoredice2");
+//let h11 = document.getElementById("scoredice");
+let dices = document.querySelectorAll(".shakePasif");
+let scoreElementPlaye1 = document.getElementById("scoredice1");
+let scoreElementPlaye2 = document.getElementById("scoredice2");
 const dice1Element = document.getElementById("dice-01");
 const dice2Element = document.getElementById("dice-02");
 const dice3Element = document.getElementById("dice-03");
 const dice4Element = document.getElementById("dice-04");
+//-----------------------------------------------------
+//Variabel use to show pop up and close pop Up
+const closePopUP = document.getElementById("closePopUp");
+const closeButton = document.querySelector(".close-button");
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+
+//windows.onload use to pop up show at page reload
+window.onload = function () {
+  modal.classList.toggle("show-modal");
+};
+
+//Function toggleModal use to switch class name example from show modal to hidden modal
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
 
 function roll() {
   dices.forEach(function (dice) {
@@ -49,6 +65,7 @@ function inputName() {
 
   player1.textContent = inputUser1.value;
   player2.textContent = inputUser2.value;
+  closePopUP.addEventListener("click", toggleModal);
 }
 
 roll();

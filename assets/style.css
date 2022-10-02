@@ -100,9 +100,17 @@ img {
 /*========================== START CSS ==========================*/
 
 .score {
-  max-width: 768px;
+ /* max-width: 768px;
   margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-right: var(--mb-1-5); 
+  max-width: 800px; 
+  margin: 0 auto;
+  */
+ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
 }
 .head {
   margin-top: var(--mb-0-75);
@@ -126,9 +134,13 @@ img {
 }
 
 .content {
-  max-width: 768px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  /*max-width: 768px;
   margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-right: var(--mb-1-5);*/
 }
 
 .container-content-dice {
@@ -183,3 +195,102 @@ img {
     transform: rotate(8deg);
   }
 }
+
+.name-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+#userinput2, #userinput1 {
+  height: 30px;
+}
+
+
+/* css button */
+
+.start {
+  position: relative;
+  border-radius: 25px;
+  background-color: #ffa800;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 175px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.start:after {
+  content: "";
+  background: #ffe100;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.start:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+/* css Pop Up */
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 30rem; 
+  border-radius: 0.5rem;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* End Css Pop UP */
